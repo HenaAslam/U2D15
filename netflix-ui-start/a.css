@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    
+}
+body {
+  
+    background-color: #141414;
+ 
+  }
+
+  .navbar:first-of-type{
+    background-color: #141414;
+    color:#e5e5e5;
+    font-size: .8rem;
+}
+.navbar:first-of-type  img{
+    height:40px;
+
+}
+.navbar:first-of-type i{
+    cursor: pointer;
+}
+.navbar:first-of-type button img{
+    width:30px;
+    height:30px
+}
+.navbar:first-of-type button{
+    background-color: #141414;
+    border:none
+}
+.navbar:first-of-type button:hover{
+    background-color: #141414;
+    border:none;
+    vertical-align: middle;
+}
+.navbar:first-of-type div{
+    vertical-align: middle;
+}
+.form-control{
+    font-size: .9rem;
+    background-color:#141414;
+    border:none;
+ 
+}
+#navbarSupportedContent > form{
+   
+    opacity: 0;
+
+}
+
+
+
+.form-control:focus{
+    background-color:#141414;
+}
+.navbar:nth-of-type(2) >div .navbar-brand{
+    color:white;
+    font-weight: bold;
+}
+
+.navbar:nth-of-type(2) .dropdown button{
+    background-color:#141414; 
+    font-size: 1.rem;
+    font-weight: 500;
+    height: 1.5rem;
+}
+
+.navbar:nth-of-type(2) .dropdown-menu{
+    background-color: #141414;
+    color: #fff;
+}
+.navbar:nth-of-type(2) .dropdown-item{
+    color: #fff;
+    font-size: .8rem;
+}
+.navbar:nth-of-type(2) .dropdown-item:hover{
+    color:black;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #fff;
+}
+
+.navtworight i{
+    color:white;
+    border:1px solid white;
+    
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    50% {
+      opcaity: 0.75;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  
+  
+  .foo{
+    
+   font-size: 12px;
+    width:70vw;
+    margin-inline: auto;
+}
+.colcustom{
+    color:grey
+}
+.colcustom a{
+    color:grey;
+}
+.colcustom i{
+    font-size: 24px;
+}
+
+
+  .carousel-indicators li {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5%;
+    background-color: transparent;
+    transition: background-color 1s;
+  }
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover {
+    background-color: linear-gradient(90deg, transparent 0, hsla(0, 0%, 7%, 0.6));
+  }
+  
+  .section-title h2 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+  }
+  
+  .movie-card-badge {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .infos-container h6 {
+    font-size: 15px;
+    font-weight: 700;
+   
+  }
+  .infos-container h6:first-of-type{
+    color:rgb(74, 223, 74);
+    vertical-align: middle;
+
+  }
+.deeet h6:nth-of-type(2){
+    border: .1px solid white;
+   
+}
+
+.bi-plus-circle{
+    cursor: pointer;
+}
+  
+
+
+.addtolist{
+    position:absolute;
+    font-size: 10px;
+    padding-top:0;
+    padding-bottom:0;
+   top:75px;
+   right:135px;
+  
+
+   opacity:0;
+}
+#alertvisible:hover + .addtolist{
+
+    opacity: 1;
+}
+  .movie-card {
+    position: relative;
+
+    transition: transform 0.5s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  
+  .infos-container {
+    
+    color: white;
+    padding: 24px;
+    position: absolute;
+    overflow: hidden;
+    /* background-color: red; */
+    z-index: 2;
+    background-image: linear-gradient(rgba(27, 37, 48, 0), #1b2530 48px);
+    transform: translateY(-62px);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.5s;
+  }
+  
+  .movie-card:hover .infos-container {
+    opacity: 1;
+    transform: translateY(-48px);
+  }
+  
+
+  
+  .infos-container i{
+    font-size: 20px;
+    
+  }
+
+
+
+  .section-title{
+    position: relative
+  }
+  .explore{
+    color:white;
+    font-size: 10px;
+    position:absolute;
+    top:8px;
+    right:61rem;
+    transform: translatex(-20px);
+    opacity:0;
+    transition: transform 1s;
+    transition:opacity 300ms;
+    color:#54b9c5
+  }
+  .section-title h2:hover + .explore{
+    transform: translatex(0px);
+    opacity:1
+  }
+  #navbarSupportedContent > div > div > ul > li > button{
+    background-color: #141414;
+    color:white
+  }
+  .dropdown-menu-right{
+    background-color: #141414;
+  }
+  .badgeoncard{
+    position:absolute;
+    left:1px
+  }
+
+
+  .carousel-control-next-icon ,.carousel-control-prev-icon{
+   opacity:.7
+  }
+.carousel-control-next-icon:hover,.carousel-control-prev-icon:hover{
+ transform: scale(2);
+ opacity:1;
+
+}
+
+.notification{
+  position: relative;
+}
+.fournoti{
+  position: absolute;
+bottom:11px;
+  left:10px;
+  
+
+}
+
+
+.navbar:nth-of-type(2){
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000000000000000000000;
+  background-color:#141414;
+}
+

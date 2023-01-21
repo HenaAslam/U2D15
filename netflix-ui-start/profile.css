@@ -1,0 +1,93 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #141414;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    background-color: #141414;
+    
+}
+.navbar img{
+    height:40px;
+}
+
+.container{
+
+    width:73vw;
+}
+
+.container h1{
+    color:white;
+    font-size: 4vw;
+    font-weight: 400;
+}
+.profileleft{
+    position: relative;
+}
+.profileleft img{
+height:140px;
+}
+.profileleft .bi-pencil{
+   position: absolute;
+   bottom:6px;
+   left:10px;
+   color:white;
+   background-color:black;
+   border-radius: 50%;
+   border:1px solid white
+}
+
+.profilerightfirst input{
+    width:60%;
+    background-color: grey;
+    border:none;
+    color:white
+}
+
+.profilerightfirst span{
+    color:grey
+}
+
+.profilerightfirst button{
+    color:white;
+    background-color: black;
+  padding:0;
+}
+.profilerightsecond h5, .profilerightthird h5{
+    font-weight: 700;
+    color:white
+}
+hr{
+    border-top: 1px solid white;
+}
+.profilerightsecond .alert{
+    display:inline;
+width:50%;
+padding:0;
+font-weight: 700;
+color:white;
+background: darkgray;
+}
+
+.profilerightsecond p{
+    color: white;
+    
+}
+.profilerightthird label{
+    color:white;
+  
+}
+.profilerightthird input{
+    accent-color: black;
+    height:10px;
+    vertical-align: middle;
+}
+.profilerightthird input.largerCheckbox {
+    width: 25px;
+    height: 25px;
+}
