@@ -1,0 +1,18 @@
+body{
+    color:white
+}
+input{
+    width:400px;
+    color:white;
+    font-weight: bold;
+    font-size:20px 
+}
+input:focus{
+    border:5px solid green;
+    box-shadow: none;
+    width:400px;
+    color:white;
+    font-weight: bold;
+    font-size:20px
+
+}

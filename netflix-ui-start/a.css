@@ -243,13 +243,13 @@ body {
   }
   .explore{
     color:white;
-    font-size: 10px;
+    font-size: 12px;
     position:absolute;
     top:8px;
-    right:61rem;
+    right:80rem;
     transform: translatex(-20px);
     opacity:0;
-    transition: transform 1s;
+    transition: transform 5s;
     transition:opacity 300ms;
     color:#54b9c5
   }
@@ -299,3 +299,8 @@ bottom:11px;
   background-color:#141414;
 }
 
+.movie-card img{
+  height:350px;
+
+  object-fit: cover;
+}
