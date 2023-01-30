@@ -19,6 +19,7 @@ const deleteMovie=async(id)=>{
 
 
 const editMovieBtn = async (id) => {
+    //document.querySelector('#submit').remove()
   let movie = allMovies.find(
     (item) => item._id === id
   );
@@ -34,6 +35,7 @@ const editMovieBtn = async (id) => {
 
 
 const editMovies=async(submitEvent)=>{
+   
     try{
         submitEvent.preventDefault()
         let name=document.getElementById("name").value
@@ -92,10 +94,10 @@ const editMovies=async(submitEvent)=>{
                  }, 3000);
     }
     catch(err){
-        let alertmsg=document.querySelector('.alert-danger')
-        alertmsg.classList.replace("d-none","d-block")
+        let alert=document.querySelector('.alert-danger')
+        alert.classList.replace("d-none","d-block")
         setTimeout(() => {
-           alertmsg.classList.replace("d-block","d-none")
+           alert.classList.replace("d-block","d-none")
         }, 3000);
     }
  }
@@ -106,8 +108,11 @@ const movieList = async (genres) => {
         node.innerHTML=""
         genres.forEach(async (genre) => {
           node.innerHTML += `<h2 class="text-danger mb-3">${genre}</h2>
-          <ul id=${genre} class="list-group list-group-horizontal mb-5 mt-5" style="color:black">
-          </ul>`
+          <div class="row-cols-1">
+          <div id=${genre} class="media mb-5 mt-5 " style="color:black">
+          </div>
+          </div>`
+
           let res= await fetch(url+`/${genre}`,options)
           let movies = await res.json();
           console.log(movies)
@@ -115,18 +120,26 @@ const movieList = async (genres) => {
           movies.forEach((movie) => {  
           allMovies.push(movie);
           list.innerHTML+=`
-          <li class="list-group-item">${movie.name}</li>
-          <li class="list-group-item"><img height="40" width="40" src=${movie.imageUrl}</li>
-          <li class="list-group-item"><button type="button" class="btn btn-danger" onclick = "deleteMovie('${movie._id}')">Delete</button></li>
-          <li class="list-group-item"><button type="button" class="btn btn-primary" onclick = "editMovieBtn('${movie._id}')">Edit</button></li>
-          "\n"
+        
+          <img src="${movie.imageUrl}" class="mr-3" height="60" width="60" alt="..." style="object-fit:contain">
+          <div class="media-body">
+          <h5 class="mt-0">${movie.name}</h5>
+          <p>${movie.description}</p>
+         <button type="button" class="btn btn-danger" onclick = "deleteMovie('${movie._id}')">Delete</button>
+         <a href="#form"><button type="button" class="btn btn-primary" onclick = "editMovieBtn('${movie._id}')">Edit</button></a>
+    
           `
-          });
+        });
 
          });
       
       };    
 const onLoadActions = async () => {
+
+    document.getElementById("name").value=""
+    document.getElementById("description").value=""
+    document.getElementById("category").value=''
+    document.getElementById("imageUrl").value=""
     allMovies=[]
     try {
       let res = await fetch(url,options)

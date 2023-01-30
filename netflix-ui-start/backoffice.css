@@ -1,17 +1,22 @@
 body{
-    color:white
+    
+    background-color: white;
 }
-input{
-    width:400px;
-    color:white;
+
+
+.form-control{
+    background-color: rgb(14, 13, 13);
+    border:1px solid black;
     font-weight: bold;
-    font-size:20px 
+    font-size:20px ;
+    color:red;
 }
-input:focus{
-    border:5px solid green;
+
+
+.form-control:focus{
+
     box-shadow: none;
-    width:400px;
-    color:white;
+    color:red;
     font-weight: bold;
     font-size:20px
 
